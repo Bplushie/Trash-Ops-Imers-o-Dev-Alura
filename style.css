@@ -1,0 +1,127 @@
+/* Importa a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+/* Estiliza o corpo da página */
+/* Estiliza o corpo da página */
+body {
+    font-family: "Teko", sans-serif; /* Define a fonte padrão */
+    text-transform: uppercase;
+    background: url('trashops2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    margin: 24px;
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-weight: 900;
+    margin: 0;
+    font-size: 3.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    
+}
+span {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    font-weight: 900;
+}
+
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem; /* Largura dos inputs */
+    color: #ffffff; /* Cor do texto */
+    background: linear-gradient(90deg, rgba(39, 39, 39, 0.7), rgba(24, 24, 24, 0.7));
+    border: 1px solid #211f1f; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    
+    font-size: 12px; /* Tamanho da fonte */
+    text-transform: uppercase;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    font-family: "Teko", sans-serif; 
+    padding: 9px 38px;
+    filter: brightness(1);
+    border: none; /* Remove a borda padrão */
+    box-shadow: 0px 0px 10px rgba(255, 165, 0, 1); /* Sombra laranja externa */
+    text-transform: uppercase;
+    background: radial-gradient(circle, #fb8c16, #fa6d03);
+    color: #1b1b1b; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    max-width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+    color: #45474B; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+}
